@@ -685,7 +685,7 @@
         
 
 
-        <form id="lead-form" action="https://formbold.com/s/60LkQ" method="POST">
+        <form action="https://formbold.com/s/60LkQ" method="POST">
           <div class="field-group">
             <input type="hidden" name="subject" value="New Automation Lead" />
 
@@ -901,23 +901,5 @@
 
   </script>
   
-
-  <script>
-    // Meta Pixel: track real form submissions
-    document.addEventListener('DOMContentLoaded', function () {
-      var form = document.getElementById('lead-form');
-      if (!form) return;
-
-      form.addEventListener('submit', function () {
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead', {
-            content_name: 'Frontline Automation Form',
-            content_category: 'Automation Lead'
-          });
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
